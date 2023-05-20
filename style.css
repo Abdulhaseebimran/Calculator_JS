@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.heading {
+    color: #eb5b07;
+    text-align: center;
+    border-bottom: 2px solid #eb5b07;
+    border-bottom-width: 1px;
+}
+
+.calculator {
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    margin: 0 auto;
+}
+
+input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.2);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+    border-bottom: solid #42474d 1px;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #42474d;
+}
+
+button:hover {
+    background-color: #383f47;
+}
+
+/* equal button */
+.button-equal{
+    background-color: rgb(194, 82, 41);
+     border: none;
+}
+
+/* minus button */
+.button-minus{
+    background-color: #42474d;
+}
+
+.button-minus:hover{
+    background-color:  transparent;
+}
+
+/* clear button */
+
+.button-clear{
+    width: 85%;
+    border-radius: 7px;
+    border-color:rgb(194, 82, 41);
+    margin-left: 30px;
+    background-color: transparent;
+}
+
+.button-clear:hover{
+    background-color: rgb(194, 82, 41);
+}
+
+/* operator button */
+.operator{
+    color:white;
+    background-color: #383f47;
+    
+}
+.operator:hover{
+    background-color: transparent;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .calculator {
+        padding: 10px;
+    }
+    
+    input {
+        width: 100%;
+    }
+    
+    button {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+    
+    .button-clear {
+        width: 70%;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    input {
+        font-size: 30px;
+    }
+    
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .button-clear {
+        width: 60%;
+        margin-left: 20px;
+    }
+}
